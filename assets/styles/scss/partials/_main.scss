@@ -1,0 +1,19 @@
+@use "mixins" as *;
+
+@font-face {
+  font-family: "FirstBunny";
+  src: url("../../fonts/First Bunny.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.main__button {
+    display: flex;
+    justify-content: center;
+}
+
+.main__button .btn-contratar { 
+    @include button-structure;
+    padding: 15px 150px;
+    margin-top: 50px;
+}

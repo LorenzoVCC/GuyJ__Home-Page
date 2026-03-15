@@ -1,0 +1,16 @@
+@use "partials/variables" as *;
+@use "partials/mixins";
+@use "partials/header";
+@use "partials/main";
+@use "partials/hero";
+@use "partials/footer";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $black;
+}

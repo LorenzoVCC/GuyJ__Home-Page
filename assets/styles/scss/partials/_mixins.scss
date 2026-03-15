@@ -1,0 +1,15 @@
+@use "variables" as *;
+
+@mixin button-structure {
+    padding: 15px;
+    border-radius: 99px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .5s;
+
+    &:hover {
+        background-color: $light-blue;
+    }
+}

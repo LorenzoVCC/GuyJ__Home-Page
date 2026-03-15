@@ -1,0 +1,50 @@
+@use "variables" as *;
+
+.hero {
+    color: white;
+    display: flex;
+}
+
+.hero--img-container {
+    height: 800px;
+    width: 60%;
+    border-bottom: 1px solid $white;
+}
+
+.hero--img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero--next-gigs {
+    width: 40%;
+    font-family: $main-font;
+    font-size: 2.5em;
+    background-color: $dark-blue;
+    border-bottom: 1px solid $white;
+    padding: 0px 40px;
+    text-align: left;
+}
+
+.hero--next-gigs h2 {
+    margin-top: 40px;
+}
+
+.hero--next-gigs__gigs-container {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}   
+
+.gig {
+    font-size: .6em;
+}
+
+.gig:first-child{
+    font-weight:600;
+    color: $light-blue;
+}
+
