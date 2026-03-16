@@ -1,9 +1,9 @@
-@use "partials/variables" as *;
-@use "partials/mixins";
-@use "partials/header";
 @use "partials/main";
+@use "partials/header";
 @use "partials/hero";
 @use "partials/footer";
+@use "partials/variables" as *;
+@use "partials/mixins";
 
 * {
     margin: 0;

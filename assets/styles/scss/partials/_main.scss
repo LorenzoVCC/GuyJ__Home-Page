@@ -1,8 +1,16 @@
 @use "mixins" as *;
+@use "variables" as *;
 
 @font-face {
   font-family: "FirstBunny";
   src: url("../../fonts/First Bunny.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Wonder";
+  src: url("/assets/fonts/cashmarket/CashMarket-BoldRounded.ttf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,4 +24,10 @@
     @include button-structure;
     padding: 15px 150px;
     margin-top: 50px;
+}
+
+.main__about {
+    background-color: red;
+    color: $white;
+    font-family: $main-font;
 }

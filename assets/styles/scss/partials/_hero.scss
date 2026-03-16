@@ -9,13 +9,18 @@
     height: 800px;
     width: 60%;
     border-bottom: 1px solid $white;
-}
+    
+    font-family: $wonder;
+    font-size: 2em;
 
-.hero--img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url('/assets/imgs/imgs/hero-dj.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .hero--next-gigs {
@@ -26,6 +31,12 @@
     border-bottom: 1px solid $white;
     padding: 0px 40px;
     text-align: left;
+}
+
+.text__blur {
+    backdrop-filter: blur(20px);
+    border-radius: 99px;
+    padding: 5px 100px;
 }
 
 .hero--next-gigs h2 {
@@ -40,7 +51,7 @@
 }   
 
 .gig {
-    font-size: .6em;
+    font-size: .5em;
 }
 
 .gig:first-child{

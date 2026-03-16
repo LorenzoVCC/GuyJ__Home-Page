@@ -1,3 +1,43 @@
+@font-face {
+  font-family: "FirstBunny";
+  src: url("../../fonts/First Bunny.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Wonder";
+  src: url("/assets/fonts/cashmarket/CashMarket-BoldRounded.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+.main__button {
+  display: flex;
+  justify-content: center;
+}
+
+.main__button .btn-contratar {
+  padding: 15px;
+  border-radius: 99px;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.main__button .btn-contratar:hover {
+  background-color: #5aa9ff;
+}
+.main__button .btn-contratar {
+  padding: 15px 150px;
+  margin-top: 50px;
+}
+
+.main__about {
+  background-color: red;
+  color: #ffffff;
+  font-family: "FirstBunny", sans-serif;
+}
+
 header {
   background-color: #050505;
   border-bottom: 1px solid #ffffff;
@@ -46,34 +86,6 @@ header .btn-contratar:hover {
   background-color: #5aa9ff;
 }
 
-@font-face {
-  font-family: "FirstBunny";
-  src: url("../../fonts/First Bunny.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-.main__button {
-  display: flex;
-  justify-content: center;
-}
-
-.main__button .btn-contratar {
-  padding: 15px;
-  border-radius: 99px;
-  text-align: center;
-  font-size: 1em;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.5s;
-}
-.main__button .btn-contratar:hover {
-  background-color: #5aa9ff;
-}
-.main__button .btn-contratar {
-  padding: 15px 150px;
-  margin-top: 50px;
-}
-
 .hero {
   color: white;
   display: flex;
@@ -83,13 +95,15 @@ header .btn-contratar:hover {
   height: 800px;
   width: 60%;
   border-bottom: 1px solid #ffffff;
-}
-
-.hero--img-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  font-family: "Wonder", sans-serif;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/assets/imgs/imgs/hero-dj.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .hero--next-gigs {
@@ -100,6 +114,12 @@ header .btn-contratar:hover {
   border-bottom: 1px solid #ffffff;
   padding: 0px 40px;
   text-align: left;
+}
+
+.text__blur {
+  backdrop-filter: blur(20px);
+  border-radius: 99px;
+  padding: 5px 100px;
 }
 
 .hero--next-gigs h2 {
@@ -114,7 +134,7 @@ header .btn-contratar:hover {
 }
 
 .gig {
-  font-size: 0.6em;
+  font-size: 0.5em;
 }
 
 .gig:first-child {
