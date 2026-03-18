@@ -15,19 +15,76 @@
   font-style: normal;
 }
 
-.main__button {
-    display: flex;
-    justify-content: center;
+main {
+  color: $white;
 }
 
-.main__button .btn-contratar { 
-    @include button-structure;
-    padding: 15px 150px;
-    margin-top: 50px;
+.main__button--container--container {
+  display: flex;
+  justify-content: center;
 }
+
+.main__button--container--container .btn-contratar {
+  @include button-structure;
+  padding: 15px 150px;
+  margin-top: 50px;
+}
+
+.main__releases {
+  margin-top: 50px;
+  font-size: 1.5em;
+  font-family: $wonder;
+  // border: 2px solid red;
+  text-align: center;
+}
+
+.main__releases--container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+//cards releases
+.main__releases--card {
+    @include card-base;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__releases--card--img-container {
+  width: 100%;
+}
+
+.main__releases--card--img-container img {
+  width: 100%;
+}
+
+.main__releases--card--text-container {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-size: 1.3em;
+    gap: 50px;
+}
+
+.main__releases--card--text-container-tracks {
+    font-family: $main-font;
+    font-weight: 300;
+    font-size: .6em;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+.main__releases--card--text-container-tracks-version
+{
+  font-weight: 600;
+}
+//fin cards
 
 .main__about {
-    background-color: red;
-    color: $white;
-    font-family: $main-font;
+  color: $white;
+  font-family: $main-font;
+  display: none;
 }

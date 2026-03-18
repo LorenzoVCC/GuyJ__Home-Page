@@ -10,32 +10,95 @@
   font-weight: normal;
   font-style: normal;
 }
-.main__button {
+main {
+  color: #ffffff;
+}
+
+.main__button--container--container {
   display: flex;
   justify-content: center;
 }
 
-.main__button .btn-contratar {
-  padding: 15px;
+.main__button--container--container .btn-contratar {
+  padding: 15px 30px;
   border-radius: 99px;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.3em;
   font-weight: 600;
+  font-family: "Wonder", sans-serif;
   cursor: pointer;
   transition: 0.5s;
 }
-.main__button .btn-contratar:hover {
+.main__button--container--container .btn-contratar:hover {
   background-color: #5aa9ff;
 }
-.main__button .btn-contratar {
+.main__button--container--container .btn-contratar {
   padding: 15px 150px;
   margin-top: 50px;
 }
 
+.main__releases {
+  margin-top: 50px;
+  font-size: 1.5em;
+  font-family: "Wonder", sans-serif;
+  text-align: center;
+}
+
+.main__releases--container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main__releases--card {
+  background-color: #1f2225;
+  width: 20%;
+  padding: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.main__releases--card:hover {
+  background-color: #0a2847;
+}
+.main__releases--card {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__releases--card--img-container {
+  width: 100%;
+}
+
+.main__releases--card--img-container img {
+  width: 100%;
+}
+
+.main__releases--card--text-container {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  font-size: 1.3em;
+  gap: 50px;
+}
+
+.main__releases--card--text-container-tracks {
+  font-family: "FirstBunny", sans-serif;
+  font-weight: 300;
+  font-size: 0.6em;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.main__releases--card--text-container-tracks-version {
+  font-weight: 600;
+}
+
 .main__about {
-  background-color: red;
   color: #ffffff;
   font-family: "FirstBunny", sans-serif;
+  display: none;
 }
 
 header {
@@ -74,11 +137,12 @@ header li:hover {
   color: #5aa9ff;
 }
 header .btn-contratar {
-  padding: 15px;
+  padding: 15px 30px;
   border-radius: 99px;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.3em;
   font-weight: 600;
+  font-family: "Wonder", sans-serif;
   cursor: pointer;
   transition: 0.5s;
 }
@@ -109,17 +173,18 @@ header .btn-contratar:hover {
 .hero--next-gigs {
   width: 40%;
   font-family: "FirstBunny", sans-serif;
-  font-size: 2.5em;
   background-color: #0b1320;
   border-bottom: 1px solid #ffffff;
   padding: 0px 40px;
   text-align: left;
+  font-size: 2.5em;
 }
 
 .text__blur {
   backdrop-filter: blur(20px);
-  border-radius: 99px;
   padding: 5px 100px;
+  width: 100%;
+  text-align: center;
 }
 
 .hero--next-gigs h2 {

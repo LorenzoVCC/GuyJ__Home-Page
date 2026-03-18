@@ -12,13 +12,14 @@
     
     font-family: $wonder;
     font-size: 2em;
-
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    
     background-image: url('/assets/imgs/imgs/hero-dj.png');
+
     background-size: cover;
     background-position: center;
 }
@@ -26,17 +27,19 @@
 .hero--next-gigs {
     width: 40%;
     font-family: $main-font;
-    font-size: 2.5em;
     background-color: $dark-blue;
     border-bottom: 1px solid $white;
     padding: 0px 40px;
     text-align: left;
+    font-size: 2.5em;
 }
 
 .text__blur {
     backdrop-filter: blur(20px);
-    border-radius: 99px;
+    // border-radius: 99px;
     padding: 5px 100px;
+    width: 100%;
+    text-align: center;
 }
 
 .hero--next-gigs h2 {
